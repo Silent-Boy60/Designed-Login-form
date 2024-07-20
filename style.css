@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(https://t4.ftcdn.net/jpg/01/75/55/33/360_F_175553383_N7tu7IVgLDwe3lHYQ7t2q020nG4dMe0Z.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.wrapper {
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    /* backdrop-filter se hm apne elements ke behind(piche) color or blur apply krskte hn  */
+    color: white;
+    border-radius: 12px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.inputcontainer {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    /* background-color: aqua; */
+    margin: 30px 0;
+}
+
+.inputcontainer input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 30px;
+    /* padding: top right bottom left; same as margin  */
+    padding: 20px 45px 20px 20px;
+    font-size: 16px;
+    caret-color: rgb(255, 255, 255);
+    color: white;
+}
+
+.inputcontainer input::placeholder {
+    color: white;
+}
+
+.inputcontainer i {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    /* is tarha ye horizontally move krta hia  */
+    font-size: 20px;
+}
+
+.wrapper .rememberforgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.rememberforgot label input {
+    accent-color: rgb(223, 223, 223);
+    /* accent-color means check box ka color  */
+    margin-right: 3px;
+}
+
+.rememberforgot a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.rememberforgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper #btn {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: white;
+    border-radius: 40px;
+    box-sizing: 0 0 10px rgb(31, 31, 31);
+    cursor: pointer;
+    font-size: 16px;
+    color: rgb(36, 36, 36);
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.wrapper .registerlink {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.registerlink p a {
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.registerlink p a:hover {
+    text-decoration: underline;
+}
